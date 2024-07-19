@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Employee Employee01 = new Employee(10, "Karim", 2500, 40);
+           /* Employee Employee01 = new Employee(10, "Karim", 2500, 40);
             Console.WriteLine(Employee01);
 
             Employee01.ID = 20; // Direct access of the attribute
@@ -67,7 +67,7 @@
             Console.WriteLine(Car02);
 
             Car Car03 = new Car(30);
-            Console.WriteLine(Car03);
+            Console.WriteLine(Car03);*/
 
         }
     }
