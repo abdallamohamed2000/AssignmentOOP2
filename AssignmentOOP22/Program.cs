@@ -25,48 +25,72 @@
 
             #region Part02_Question02
 
-            Person[] people = new Person[3];
+            /* Person[] people = new Person[3];
 
-            for (int i = 0; i < people.Length; i++)
+             for (int i = 0; i < people.Length; i++)
+             {
+                 Console.Write($"Enter name number {i+1}: ");
+                 string name = Console.ReadLine();
+
+                 if (string.IsNullOrWhiteSpace(name))
+                 {
+                     name = "Unknown";
+                 }
+
+                 int age;
+                 while (true)
+                 {
+                     Console.Write($"Enter age number {i+1}: ");
+                     if (int.TryParse(Console.ReadLine(), out age))
+                     {
+                         break;
+                     }
+                     else
+                     {
+                         Console.WriteLine("Invalid input. Please enter a valid integer for age.");
+                     }
+                 }
+
+                 people[i] = new Person { Name = name, Age = age };
+             }
+
+             Person oldestPerson = people[0];
+
+             for (int i = 1; i < people.Length; i++)
+             {
+                 if (people[i].Age > oldestPerson.Age)
+                 {
+                     oldestPerson = people[i];
+                 }
+             }
+
+             Console.WriteLine($"The oldest person is {oldestPerson.Name} with age {oldestPerson.Age}");*/
+
+
+            #endregion
+
+            #region Part03_Question06
+            /*Employee[] employees = new Employee[3];
+
+            employees[0] = Employee.CreateEmployee(SecurityPrivileges.DBA);
+            employees[1] = Employee.CreateEmployee(SecurityPrivileges.Guest);
+            employees[2] = Employee.CreateEmployee(SecurityPrivileges.DBA | SecurityPrivileges.Guest | SecurityPrivileges.Developer | SecurityPrivileges.Secretary);
+
+            foreach (Employee employee in employees)
             {
-                Console.Write($"Enter name number {i+1}: ");
-                string name = Console.ReadLine();
+                Console.WriteLine(employee);
+            }*/
 
-                if (string.IsNullOrWhiteSpace(name))
-                {
-                    name = "Unknown";
-                }
+            #endregion
 
-                int age;
-                while (true)
-                {
-                    Console.Write($"Enter age number {i+1}: ");
-                    if (int.TryParse(Console.ReadLine(), out age))
-                    {
-                        break;
-                    }
-                    else
-                    {
-                        Console.WriteLine("Invalid input. Please enter a valid integer for age.");
-                    }
-                }
+            #region Part03_Question07
 
-                people[i] = new Person { Name = name, Age = age };
-            }
+            /*employees = Employee.SortEmployees(employees);
 
-            Person oldestPerson = people[0];
-
-            for (int i = 1; i < people.Length; i++)
+            foreach (Employee employee in employees)
             {
-                if (people[i].Age > oldestPerson.Age)
-                {
-                    oldestPerson = people[i];
-                }
-            }
-
-            Console.WriteLine($"The oldest person is {oldestPerson.Name} with age {oldestPerson.Age}");
-
-
+                Console.WriteLine(employee);
+            }*/
             #endregion
 
 
